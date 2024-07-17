@@ -8,9 +8,10 @@
 </head>
 <body>
     <header>
+       <a href="./index.html"> <img src="./img/logo.png" class="logo"  alt="Logo Batman"/></a>
         <nav>
-            <ul>
-                <a href="./index.html"><img src="./img/logo.png" class="logo"  alt="Logo Batman"></a>
+            
+            <ul>               
                 <a href="./index.html"><li>Home</li></a>
                 <a href="./html/foto.html"><li>Fotos</li></a>
                 <a href="./html/comentario.html"><li>Comentários</li></a>
@@ -22,20 +23,20 @@
    <main>
         <div class="banner"></div>
 
-        <div class="trailer">
+        <div class="trailer-container">
             <div class="trailer-content">
-                <video src="./video/trailerbatman.mp4" controls muted></video>
+                <video src="./video/trailerbatman.mp4" class="trailer" controls type="video/mp4">Seu navegador não possui suporte para mp4.</video>
             </div>
             
-            <div class="description">
-                <p>Quando um assassino mira a elite de Gotham com uma série de maquinações sádicas, um rastro de pistas enigmáticas leva Batman a investigar o submundo da cidade, onde encontra personagens como Selina Kyle, a Mulher-Gato, Oswald Cobblepot, também conhecido como Pinguim, Carmine Falcone e Edward Nashton, também conhecido como Charada. À medida que surgem evidências e as ações do criminoso apontam para uma direção mais clara, Batman precisa forjar novas relações, desmascarar o culpado e trazer justiça a Gotham City</p>
+            <div id="sinopse">
+                <p class="description">Quando um assassino mira a elite de Gotham com uma série de maquinações sádicas, um rastro de pistas enigmáticas leva Batman a investigar o submundo da cidade, onde encontra personagens como Selina Kyle, a Mulher-Gato, Oswald Cobblepot, também conhecido como Pinguim, Carmine Falcone e Edward Nashton, também conhecido como Charada. À medida que surgem evidências e as ações do criminoso apontam para uma direção mais clara, Batman precisa forjar novas relações, desmascarar o culpado e trazer justiça a Gotham City</p>
+
+                <button class="btn">Comprar Ingresso</button>
             </div>
 
         
         </div>
-        <div class="btn">
-            <button>Comprar Ingresso</button>
-        </div>
+        
    </main>
 
    <aside>
@@ -49,9 +50,17 @@
    </aside>
 
    <footer>
+        <a href="./index.html"><img src="./img/logo.png" class="logo"  alt="Logo Batman" style="object-fit:contain;"></a>
+
+        <div class="creditos">
+            <p>Desenvolvido por <strong>Fábio Costa</strong></p>
+            <small>Todos direitos reservados &copy </small>
+            <p>2024</p>
+        </div>
+
         <nav class="nav-footer">
             <ul class="nav-lista">
-                <a href="./index.html"><img src="./img/logo.png" class="logo"  alt="Logo Batman"></a>
+               
                 <a href="./index.html" class="nav-a"><li>Home</li></a>
                 <a href="./html/foto.html" class="nav-a"><li>Fotos</li></a>
                 <a href="./html/comentario.html" class="nav-a"><li>Comentários</li></a>
@@ -59,11 +68,7 @@
             </ul>
         </nav>     
         
-        <div class="creditos">
-            <p>Desenvolvido por <strong>Fábio Costa</strong></p>
-            <small>Direitos reservados &copy </small>
-            <p>2024</p>
-        </div>
+        
    </footer>
 </body>
 </html>

@@ -1,32 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     background-color: black;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
-.logo{
-    width: 100%;
-    height: 150px;
+/* Menu de navegação */
+
+header{
    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+
 }
 
-
+nav {
+    width: 60%;
+}
 
 ul{
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    
+    justify-content: space-between;
+    width: 100%;  
    
 }
 
+li{
+    list-style: none;
+    color: aliceblue;
+    font-family: "kdam Thmor Pro", sans-serif;
+    font-size: 19px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+li:hover{
+    color: #d21617;
+
+}
+
 a{
-    text-decoration: none;       
-    width: 300px;
-    height: 150px;
+    text-decoration: none;        
     transition: opacity 500ms linear; /* Adiciona uma transição suave */
 }
 
@@ -36,75 +57,82 @@ a:hover{
 
 
 
-li{
-    list-style: none;
-    text-decoration: none;
-    color: aliceblue;
-    font-family: "Goldman", sans-serif;
-    font-size: 25px;
-    margin-top: 50px;
+.logo{
+    width: 200px;
+    height: auto; 
+    margin-top: 20px;      
+   
 }
-
-
 
 .banner{
     background-image: url("https://preview.redd.it/6092ltrt8nt71.jpg?auto=webp&s=c26d698d5d92796be9c6ab47f22dba63a7be96c3");
     width: 100%;
     height: 500px;
+    background-position: 50% 50%;
+    background-size: cover;
   
 }
 
-.trailer{
+.trailer-container{
+    width: 100%;
+    height: 400px;
     display: flex;
-    justify-content: space-between;
-    text-align: start;
-    align-items: center;
+    justify-content: center;
+    
 }
 
-
-
 .trailer-content{
-    width: 100%;
-    
-    
-    
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trailer{
+    width: 70%;
+
+}
+
+#sinopse{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
 }
 
 .description{
-    color: #fff;
-    font-size: 18px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#fff;
+    font-size: 19px;
+    font-family: "kdman Thmor Pro", sans-serif;
+    width: 95%;
+    margin-top: 60px ;
 }
 
-
-
-
-
-
-.btn{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 120px;   
-    align-items: center;
-    text-align: center;
-}
-
-button{
-    background-color: #d21;
-    font-size: 20px;
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: #d21617;
     color: #fff;
-    width: 20%;
-    height: 45px;    
-    cursor: pointer;
+    padding: 14px;
     border-radius: 5px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
     transition: opacity 500ms linear;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-bottom: 40px;
+    
 }
 
-button:hover{
-   
-    color: #fff;
-    opacity: 0.5;
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+    opacity: .5s;
+
 }
 
 /* Cards */
@@ -146,6 +174,7 @@ button:hover{
     transform: scale(1.05);
 }
 
+/* banner */
 .banner1{
    
     background-image: url("https://th.bing.com/th/id/OIP.cvNjWOiRUMUxsK124NT5XwHaEK?rs=1&pid=ImgDetMain");
@@ -164,23 +193,113 @@ button:hover{
     
 }
 
+
+/* footer */
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+small{
+    font-family: "kdman Thmor Pro", sans-serif;
+}
+
+
 .nav-footer {
     display: flex;
     justify-content: center;
+    display: none;
 }
 
 .nav-lista{
+    display: flex;
     flex-direction: column;
-    width: 20%;   
+    align-items: center;
+      
     
 }
 
-.nav-a{
-    display: none;
-}
 
 .creditos{
     color: #fff;
     text-align: center;
 }
 
+
+
+/* responsivo */
+
+@media(max-width:768px){
+
+  
+    .nav-footer{
+        display: block;
+    }
+
+    
+
+    nav{
+        display: none;
+        
+    }
+
+    .banner{
+        background-position: 40%;
+    }
+
+    .trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer-content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 300px;
+      
+    }
+
+    .trailer{
+        width: 100%;
+        
+    }
+
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    .description{
+        width: 100%;   
+       
+        
+    }
+
+    .btn{       
+        width: 90%;
+        margin-top: 15px;
+        
+        
+    }
+
+    
+
+    .card-content{
+        grid-template-columns: 1fr;
+        margin-top: 250px;
+        width: 100%;
+        text-align: center;
+        
+    }
+}
