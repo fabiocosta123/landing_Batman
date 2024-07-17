@@ -248,8 +248,9 @@ small{
         
     }
 
-    .banner{
-        background-position: 40%;
+    h3{
+        text-align: center;
+        font-size: 10px;
     }
 
     .trailer-container{
@@ -302,4 +303,22 @@ small{
         text-align: center;
         
     }
+
+    .card{
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 0 20px 10px;
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+   
 }
