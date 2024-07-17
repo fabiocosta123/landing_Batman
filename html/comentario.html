@@ -3,20 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/comentario.css">
     <title>Comentário</title>
 </head>
 <body>
     <header>
-        <img src="../img/logo.png" alt="Logo Batman">
-
         <nav>
             <ul>
+                <a href="../index.html"><img src="../img/logo.png" class="logo"  alt="Logo Batman"></a>
                 <a href="../index.html"><li>Home</li></a>
                 <a href="./foto.html"><li>Fotos</li></a>
                 <a href="./comentario.html"><li>Comentários</li></a>
                 <a href="./contato.html"><li>Contatos</li></a>
             </ul>
-        </nav>
+        </nav>        
     </header>
+
+    <main>
+        <div class="comentario">
+            <h3>Deixe seu Comentário...</h3>
+        </div>
+    </main>
+
+    <form class="form-container">
+        <input type="text" placeholder="Seu nome">
+        <textarea id="texto" placeholder="Escreva seu comentário"></textarea>
+
+        <button class="btn" type="submit">Enviar</button>
+    </form>
+
+    <footer>
+        <nav class="nav-footer">
+            <ul class="nav-lista">
+                <a href="./index.html"><img src="../img/logo.png" class="logo"  alt="Logo Batman"></a>
+                <a href="./index.html" class="nav-a"><li>Home</li></a>
+                <a href="./html/foto.html" class="nav-a"><li>Fotos</li></a>
+                <a href="./html/comentario.html" class="nav-a"><li>Comentários</li></a>
+                <a href="./html/contato.html" class="nav-a"><li>Contatos</li></a>
+            </ul>
+        </nav>     
+        
+        <div class="creditos">
+            <p>Desenvolvido por <strong>Fábio Costa</strong></p>
+            <small>Direitos reservados &copy </small>
+            <p>2024</p>
+        </div>
+   </footer>
 </body>
 </html>

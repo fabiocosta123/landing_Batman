@@ -24,8 +24,7 @@ ul{
 }
 
 a{
-    text-decoration: none;    
-    
+    text-decoration: none;       
     width: 300px;
     height: 150px;
     transition: opacity 500ms linear; /* Adiciona uma transição suave */
